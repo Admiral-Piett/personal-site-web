@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*25. Blue, maroon, & indigo (classic)*/
+/*Hex codes: Pale Blue #408EC6, Maroon #7A2048, Indigo #1E2761*/
+html {
+  min-height: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  background: linear-gradient(
+    135deg,
+    #1e2761 5rem,
+    #7a2048 5rem,
+    #7a2048 15rem,
+    #1e2761 15rem
+  );
+  background-repeat: no-repeat;
+  background-color: #1e2761;
+  color: #408ec6;
+}
+
+/* I don't know where this is coming from but we'll turn it off*/
+p {
+  margin: 0;
+}
+
+.navigation-bar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: grid;
+}
+
+.link-ul {
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+}
+
+.link-li {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  margin-top: 10vw;
+}
+
+.headshot-wrapper {
+  width: 250px;
+}
+
+.headshot {
+  border-radius: 9999px;
+}
+
+.logo {
+  font-size: 10rem;
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 11rem;
+  margin-right: 11rem;
+  margin-top: 15vw;
+}
+
+.experience-menu-list {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2em;
+}
+
+.experience-menu-button {
+  margin-right: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+.experience-menu-title {
+  white-space: nowrap;
+}
+
+.experience-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.experience-dates {
+  font-style: italic;
+}
+
+.experience-list {
+  margin-top: 1em;
+}
+
+.experience-task {
+  display: flex;
+  flex-direction: row;
+}
+
+.experience-task-bullet {
+  font-size: 2rem;
+  flex: none;
+}

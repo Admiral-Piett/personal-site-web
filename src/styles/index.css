@@ -4,6 +4,7 @@
 
 /*25. Blue, maroon, & indigo (classic)*/
 /*Hex codes: Pale Blue #408EC6, Maroon #7A2048, Indigo #1E2761*/
+/* Slightly lighter Indigo - #37417C*/
 html {
   min-height: 100%;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
@@ -25,6 +26,10 @@ p {
   margin: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 .navigation-bar {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -38,8 +43,14 @@ p {
 }
 
 .link-li {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
+}
+
+.link-li:hover {
+  background-color: #37417c;
+  border-radius: 3px;
 }
 
 .outer-wrapper {
@@ -71,15 +82,25 @@ p {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin-left: 11rem;
-  margin-right: 11rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
   margin-top: 15vw;
 }
 
-.experience-menu-list {
+.experience-menu-list-wrapper {
+  margin-right: 2em;
+  padding: 0.25rem 0 0 0.5rem;
+}
+
+.experience-menu-list-wrapper:hover {
+  background-color: #37417c;
+  border-radius: 3px;
+  padding-top: 0.5rem;
+}
+
+.experience-menu-list-button {
   display: flex;
   flex-direction: row;
-  margin-right: 2em;
 }
 
 .experience-menu-button {
@@ -105,12 +126,159 @@ p {
   margin-top: 1em;
 }
 
+.experience-task-li {
+  margin-top: 0.3em;
+}
+
 .experience-task {
   display: flex;
   flex-direction: row;
 }
 
 .experience-task-bullet {
-  font-size: 2rem;
+  font-size: 5vw;
   flex: none;
+  height: 0.25em;
+  width: 0.25em;
+}
+
+.project-header {
+  font-size: 2rem;
+}
+
+.project-group {
+  margin-bottom: 10em;
+}
+
+.project-wrapper {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.project-wrapper:nth-child(even) {
+  flex-direction: row;
+}
+
+.project-wrapper:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.project-image {
+  width: 200px;
+}
+
+.project-wrapper:nth-child(even) > .project-meta {
+  margin-left: 1.5rem;
+  margin-right: 4rem;
+}
+
+.project-wrapper:nth-child(odd) > .project-meta {
+  margin-right: 1.5rem;
+  margin-left: 4rem;
+}
+
+.project-meta {
+  margin-top: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+}
+
+.project-description {
+  margin-top: 0.25rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.project-tech-entry {
+  margin: 0 0.5rem 0 0.5rem;
+  font-style: italic;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+}
+
+.project-link-a {
+  padding-left: 0.5rem;
+}
+
+.project-link > div {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #92c4e8;
+  opacity: 0.6;
+}
+
+.email-icon {
+  font-size: 15rem;
+  margin-top: -0.25em;
+}
+
+.email-description {
+  margin: 2em 10em 3em 10em;
+}
+
+.email-button {
+  background-color: #7a2048;
+  border-radius: 50px;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+}
+
+.email-form-wrapper {
+  position: sticky; /* This is important so that we can click in the form without it closing it can't be `static` (default)*/
+  display: flex;
+  flex-direction: row;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: -30em;
+  opacity: 1;
+  border-radius: 10px;
+  background-color: #1e2761;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5em;
+  padding: 1em;
+}
+
+.email-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.email-form-input {
+  border-radius: 3px;
+  padding: 0.25rem;
+}
+
+.email-form-button {
+  background-color: #7a2048;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border-radius: 3px;
+  margin-top: 1rem;
+}
+
+.resume-button {
+  background-color: #7a2048;
+  padding: 2em 3em 2em 3em;
+  border-radius: 10px;
 }

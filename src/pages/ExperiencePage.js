@@ -12,12 +12,10 @@ const experience = [
     company: "URBN Inc.",
     dates: "2019 - Present",
     tasks: [
-      "Head engineer of a RESTful API microservice and event processing platform, written in Python and Go, supporting over 35m orders per year and resulting in $5.5b.",
-      "Architect and lead engineer on an asynchronous order submission pattern generating over $450k and counting.",
-      "Designed highly performant solutions with an increase in speed by 50%.",
-      "Lead the department's learning culture through mentorship, pair programming, and team collaboration.",
-      "Creator and owner of a batch processing framework supporting large-scale asynchronous processing including ETL and database management.",
-      "Implement and design cloud-based CICD solutions to support the migration of the entire stack into the cloud.",
+      "Head engineer of a RESTful API microservice and event processing platform, written in Python and Go.",
+      "Architect and lead engineer many platform-wide solutions including an asynchronous order submission pattern generating over $450k and counting and a performance pattern that reduces request time by 50%.",
+      "Corner-stone in the culture of collaboration by leading pair-programming and mentorship initiatives.",
+      "Collaborate and design cloud-based CICD solutions to support the migration of the entire stack into the cloud.",
     ],
   },
   {
@@ -64,7 +62,7 @@ const ExperiencePage = () => {
         <ul className="experience-list">
           {entry.tasks.map((task) => {
             return (
-              <li key={uuidv4()}>
+              <li className="experience-task-li" key={uuidv4()}>
                 <div className="experience-task">
                   <RxDot className="experience-task-bullet" />
                   <p>{task}</p>
@@ -81,16 +79,18 @@ const ExperiencePage = () => {
     const isSelected = openIndex === index;
     return (
       <div
-        className="experience-menu-list"
+        className="experience-menu-list-wrapper"
         onClick={() => {
           handleClick(index);
         }}
         key={uuidv4()}
       >
-        <div className="experience-menu-button">
-          {isSelected ? <BiRightArrow /> : <BiDownArrow />}
-        </div>
-        <div className="experience-menu-title">{entry.shortTitle}</div>
+        <button className="experience-menu-list-button">
+          <div className="experience-menu-button">
+            {isSelected ? <BiRightArrow /> : <BiDownArrow />}
+          </div>
+          <div className="experience-menu-title">{entry.shortTitle}</div>
+        </button>
       </div>
     );
   });

@@ -1,6 +1,9 @@
 import { useState } from "react";
-import Modal from "../components/modal";
 import { CgHello } from "react-icons/cg";
+import emailjs from "@emailjs/browser";
+
+import Modal from "../components/modal";
+import { emailTemplateId } from "../config";
 
 const EmailPage = () => {
   const [showEmail, setShowEmail] = useState(false);
@@ -27,6 +30,13 @@ const EmailPage = () => {
     event.preventDefault();
     console.log("Submit");
     console.log(emailData);
+    const emailClientData = {
+      from_name: emailData.name,
+      message: emailData.message,
+      reply_to: emailData.email,
+      subject: emailData.subject,
+    };
+    emailjs.send("default_service", emailTemplateId, emailClientData);
     handleClose();
   };
 

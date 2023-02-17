@@ -6,7 +6,7 @@ const projects = [
     title: "Musizticle",
     shortDescription: "2-Piece Music streaming Service in Golang",
     description: `A 2-part distributed music streaming service that can be deployed locally and in the cloud.  The backend can 
-      find relevant mp3 files, build a library, and stream these files to a separate gui "front end".\n\nBoth parts are
+      find relevant mp3 files, build a library, and stream these files to a separate gui "front end".  Both parts are
        written in Go and designed to be cross-compiled on multiple platforms including Linux, Android, Windows, 
        MacOS, and more.`,
     tech: ["Go", "Docker", "Github Actions"],
@@ -20,7 +20,7 @@ const projects = [
         link: "https://github.com/Admiral-Piett/musizticle",
       },
     ],
-    image: undefined,
+    image: `${process.env.PUBLIC_URL}/static/musizticle_demo.gif`,
   },
   {
     title: "Chattington",
@@ -31,25 +31,10 @@ const projects = [
     tech: ["Go", "Shell", "Docker"],
     githubLinks: [
       {
-        // repo: "Chattington",
         link: "https://github.com/Admiral-Piett/chattington",
       },
     ],
-    image: undefined,
-  },
-  {
-    title: "OAuth Spotify Service",
-    shortDescription: "Spotify OAuth Service for Apple TV Applications",
-    description: `A RESTful API service and basic front-end supporting OAuth Authentications with Spotify accounts.  
-      It was originally designed to be used as the authentication for an Apple TV Spotify Application.`,
-    tech: ["Python", "Flask", "HTML"],
-    githubLinks: [
-      {
-        // repo: "SpotifiTV-Server",
-        link: "https://github.com/ashleyvaccaro/SpotifiTV-Server",
-      },
-    ],
-    image: undefined,
+    image: `${process.env.PUBLIC_URL}/static/chattington_demo_edited.gif`,
   },
 ];
 
@@ -57,13 +42,7 @@ const ProjectsPage = () => {
   const renderedProjects = projects.map((project) => {
     return (
       <div key={uuidv4()} className="project-wrapper">
-        <img
-          className="project-image"
-          src={
-            /*TODO sort this link -*/ `${process.env.PUBLIC_URL}/static/20190504_201005.jpg`
-          }
-          alt="project"
-        />
+        <img className="project-image" src={project.image} alt="project" />
         <div className="project-meta">
           <div className="project-title">{project.title}</div>
           <div className="project-description">{project.description}</div>

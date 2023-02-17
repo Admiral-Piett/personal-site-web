@@ -164,7 +164,7 @@ textarea {
 }
 
 .project-image {
-  width: 200px;
+  height: 15em;
 }
 
 .project-wrapper:nth-child(even) > .project-meta {

@@ -1,20 +1,26 @@
-# Getting Started with Create React App
+# My Personal Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Welcome to the code for my site!  This is intended to be a basic site to show some of the things I do, who I am, and 
+what I'm working on.  It's written using React with of course HTML and friends.  It's hosted here: <TBD> using 
+Google Cloud.  
+
+This is only intended for personal use and referance for anyone else who's interested, so please be kind with what you 
+find.  That said, stop by and say Hi!
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and 
+[Tailwind](https://tailwindcss.com/).
+
+## To Install
+Clone this repo
+```shell
+yarn install
+yarn start
+```
 
 ## Available Scripts
 ### `yarn start`
 ### `yarn test`
 ### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## json-server
 ```shell

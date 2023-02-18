@@ -8,12 +8,27 @@ const AboutPage = () => {
           alt="headshot"
         />
       </div>
-      <div className="content">
+      <div className="text-content-wrapper about-content">
         <p>
-          I'm a Software Engineer who specializes in the backend. Blah blah
-          blah, I also make cocktails, blah blah blah and I can kind of
-          sing...blah blah blah blah Check out some of my projects
+          I'm a Senior Backend Software Engineer currently working at URBN Inc.
+          (Urban Outfitters/Anthropologie/Free People and friends). I specialize
+          in backend RESTful microservice design and development.
         </p>
+        <p>
+          I work closely across any teams that will have me, particularly Dev
+          Ops, as I love playing with infrastructure and designing new ways to
+          make our infra-lives easier. I'm also am a learning and mentor devotee
+          and I lead that charge wherever I go.
+        </p>
+        <ul>
+          Some things I do:
+          <li>Design/Architecture</li>
+          <li>Cloud Design</li>
+          <li>Leadership/Mentoring</li>
+          <li>ETL</li>
+          <li>Python</li>
+          <li>Golang</li>
+        </ul>
       </div>
     </div>
   );

@@ -7,8 +7,13 @@ const DashboardPage = () => {
         <div>
           <AiFillAliwangwang className="logo" />
         </div>
-        <div className="content">
-          <p>Hi there! I'm Devin. I build things and do stuff.</p>
+        <div className="text-content-wrapper dashboard-content">
+          <p>Hi there!</p>
+          <p>
+            I'm Devin. I'm a Backend Software Engineer by day and a Cocktail
+            Enthusiast by night. I like to build things and share them, so
+            welcome, and thanks for dropping by!
+          </p>
         </div>
       </div>
     </div>

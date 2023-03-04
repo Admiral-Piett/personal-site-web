@@ -1,4 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
+import ContactInfo from "./ContactInfo";
 
 const Navigation = () => {
   const handleResumeClick = () => {
@@ -28,6 +29,7 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
+      <ContactInfo />
       <Outlet />
     </div>
   );

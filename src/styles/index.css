@@ -5,6 +5,7 @@
 /*25. Blue, maroon, & indigo (classic)*/
 /*Hex codes: Pale Blue #408EC6, Maroon #7A2048, Indigo #1E2761*/
 /* Slightly lighter Indigo - #37417C*/
+/* SLightly lighter Maroon - #993e66*/
 html {
   min-height: 100%;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
@@ -28,6 +29,20 @@ p {
 
 textarea {
   resize: none;
+}
+
+.general-button {
+  color: #993e66;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #7a2048;
+  border-radius: 10px;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  font-weight: bolder;
+}
+
+.general-header {
+  font-size: 1.5rem;
 }
 
 .navigation-bar {
@@ -78,12 +93,33 @@ textarea {
   font-size: 10rem;
 }
 
+.contact-info {
+  position: fixed;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  bottom: 3em;
+  right: 1em;
+}
+
 .dashboard-content {
   text-align: center;
 }
 
 .dashboard-content > p {
   margin-bottom: 1rem;
+}
+
+.dashboard-extras {
+  margin-top: 5em;
+}
+
+.dashboard-cocktails-description {
+  margin-top: 0.5rem;
+}
+
+.dashboard-cocktails-link {
+  margin-top: 1rem;
+  position: absolute;
 }
 
 .about-content > * {
@@ -250,12 +286,6 @@ textarea {
   margin: 2em 10em 3em 10em;
 }
 
-.email-button {
-  background-color: #7a2048;
-  border-radius: 50px;
-  padding: 1rem 1.5rem 1rem 1.5rem;
-}
-
 .email-form-wrapper {
   position: sticky; /* This is important so that we can click in the form without it closing it can't be `static` (default)*/
   display: flex;
@@ -288,9 +318,6 @@ textarea {
 }
 
 .email-form-button {
-  background-color: #7a2048;
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-  border-radius: 3px;
   margin-top: 1rem;
 }
 

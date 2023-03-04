@@ -1,0 +1,71 @@
+.cocktail-wrapper {
+  width: 100%;
+  padding: 1em 3em 1em 3em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #92c4e8;
+}
+
+.cocktail-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+.cocktail-expansion-carrot {
+  color: #408ec6;
+  font-size: 1.5em;
+}
+
+.cocktail-expansion-carrot-button:hover {
+  background-color: #37417c;
+  border-radius: 3px;
+}
+
+.cocktail-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.cocktail-tasting-notes-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+.cocktail-tasting-note {
+  margin-right: 1rem;
+}
+
+.cocktail-glassware {
+  font-size: 2rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+.cocktail-recipe {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0.5rem;
+}
+
+.cocktail-ingredient {
+  display: flex;
+  flex-direction: row;
+}
+
+.cocktail-ingredient > div {
+  margin-right: 0.25rem;
+}
+
+.cocktail-ingredient-spacer {
+  margin-left: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.cocktail-recipe-steps {
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  list-style-type: decimal;
+}

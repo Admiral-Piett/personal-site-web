@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CgHello } from "react-icons/cg";
 import emailjs from "@emailjs/browser";
 
-import Modal from "../components/modal";
+import Modal from "../components/Modal";
 import { emailTemplateId } from "../config";
 
 const EmailPage = () => {
@@ -93,7 +93,7 @@ const EmailPage = () => {
                 cols="50"
               />
             </div>
-            <button className="email-form-button">Submit</button>
+            <button className="email-form-button general-button">Submit</button>
           </form>
         </div>
       </Modal>
@@ -109,7 +109,7 @@ const EmailPage = () => {
           Like what you see, want to collab, or just want to say hi? Shoot me an
           email! I'll do my best to get back to you ASAP!
         </div>
-        <button className="email-button" onClick={handleOpen}>
+        <button className="general-button" onClick={handleOpen}>
           Email Me!
         </button>
       </div>

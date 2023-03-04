@@ -6,6 +6,7 @@ import AppRouter from "./router/AppRouter";
 import { emailPubKey } from "./config";
 
 import "./styles/index.css";
+import "./styles/cocktails.css";
 
 const element = document.getElementById("root");
 const root = ReactDOM.createRoot(element);
